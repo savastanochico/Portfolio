@@ -6,24 +6,67 @@
   <title>Compétence - Sauvegardes & Restaurations</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafb;
+    }
+    .competence-detail {
+      max-width: 900px;
+      margin: 100px auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    }
+    .competence-detail h2 {
+      font-size: 1.8rem;
+      color: #2563eb;
+      margin-bottom: 1.2rem;
+      text-align: center;
+    }
+    .competence-detail ul {
+      list-style-type: disc;
+      padding-left: 2rem;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #374151;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #2563eb;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #1e40af;
+    }
+  </style>
 </head>
 <body>
   <div id="particles-js"></div>
 
-  <section class="competence-detail">
-    <h2>💾 Sauvegardes & Restaurations</h2>
-    <ul>
-      <li>Création de points de restauration système pour revenir à un état stable après une mise à jour ou un incident logiciel.</li>
-      <li>Sauvegarde de données personnelles sur clé USB, disque dur externe ou réseau local.</li>
-      <li>Utilisation de l’outil de sauvegarde Windows pour planifier des sauvegardes automatiques.</li>
-      <li>Compression de fichiers importants en archives (.zip/.rar) pour une meilleure organisation des sauvegardes.</li>
-      <li>Réinitialisation du système via les options de récupération Windows.</li>
-    </ul>
-    <a href="index.html#skills" class="cta-button">← Retour aux compétences</a>
-  </section>
+  <main>
+    <section class="competence-detail">
+      <h2>💾 Sauvegardes & Restaurations</h2>
+      <ul>
+        <li>Création de points de restauration système pour revenir à un état stable après une mise à jour ou un incident logiciel.</li>
+        <li>Sauvegarde de données personnelles sur clé USB, disque dur externe ou réseau local.</li>
+        <li>Utilisation de l’outil de sauvegarde Windows pour planifier des sauvegardes automatiques.</li>
+        <li>Compression de fichiers importants en archives (.zip/.rar) pour une meilleure organisation des sauvegardes.</li>
+        <li>Réinitialisation du système via les options de récupération Windows.</li>
+      </ul>
+      <a href="index.html#skills" class="cta-button">← Retour aux compétences</a>
+    </section>
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
-
