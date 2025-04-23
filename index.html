@@ -4,59 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ouassim Sidi Ikhlef - Portfolio BTS SIO SISR</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <style>
-    .text-center {
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .text-center p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #4b5563;
-    }
-    .text-center h3 {
-      color: #2563eb;
-      margin-bottom: 1rem;
-    }
-    .dropdown {
-      position: relative;
-    }
-    .dropdown > a {
-      font-weight: 600;
-      color: #2563eb;
-    }
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: white;
-      border: 1px solid #e5e7eb;
-      padding: 0.5rem 1rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-      border-radius: 0.5rem;
-      z-index: 999;
-    }
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
-    .dropdown-menu li {
-      list-style: none;
-      margin: 0.5rem 0;
-    }
-    .dropdown-menu a {
-      color: #1f2937;
-      text-decoration: none;
-      font-size: 0.95rem;
-      white-space: nowrap;
-    }
-    .dropdown-menu a:hover {
-      color: #2563eb;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div id="particles-js"></div>
@@ -64,18 +15,7 @@
   <nav class="navbar">
     <div class="nav-content">
       <div class="logo">Ouassim SI</div>
-      <button class="menu-toggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
       <ul class="nav-links">
-        <li class="dropdown">
-          <a href="#">📁 Documents</a>
-          <ul class="dropdown-menu">
-            <li><a href="documents/cv_ouassim_sidi_ikhlef.pdf" download target="_blank">📄 CV</a></li>
-            <li><a href="documents/annexe_tableau_synthese.pdf" download target="_blank">📊 Annexe - Synthèse</a></li>
-            <li><a href="documents/attestation_stage.pdf" download target="_blank">📜 Attestation de stage</a></li>
-          </ul>
-        </li>
         <li><a href="#home">Accueil</a></li>
         <li><a href="#about">Profil</a></li>
         <li><a href="#skills">Compétences</a></li>
@@ -83,75 +23,146 @@
         <li><a href="#experiences">Expériences</a></li>
         <li><a href="#objectif">Objectif</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#documents">Documents</a></li>
       </ul>
     </div>
   </nav>
 
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Ouassim Sidi Ikhlef</h1>
-      <h2>Passionné par les systèmes réseaux & la cybersécurité</h2>
-      <p>Étudiant en 2ème année de BTS SIO - Spécialité SISR</p>
-      <a href="mailto:Ouassimsidi023@gmail.com" class="cta-button">Me Contacter</a>
-    </div>
+  <section id="home" class="hero fade-in-up">
+    <h1>Ouassim Sidi Ikhlef</h1>
+    <h2>Passionné par les systèmes réseaux & la cybersécurité</h2>
+    <p>Étudiant en 2ème année de BTS SIO - Spécialité SISR</p>
+    <a href="mailto:Ouassimsidi023@gmail.com" class="cta-button">Me Contacter</a>
   </section>
 
-  <section id="about" class="about">
+  <section id="about" class="about fade-in-up">
     <h2>Profil</h2>
     <div class="about-content">
-      <div class="about-text">
-        <p>
-          Actuellement en 2ème année de BTS Services Informatiques aux Organisations (option SISR), je me forme à la gestion d'infrastructures réseaux, à l'administration système et aux fondamentaux de la cybersécurité. Je suis motivé, curieux, rigoureux et j'apprécie particulièrement le travail en équipe ainsi que les environnements techniques dynamiques.
-        </p>
-        <p>
-          Ce portfolio présente mes compétences, mes réalisations en cours de formation et mes expériences acquises en stage. J'aime apprendre par la pratique et résoudre des problèmes concrets.
-        </p>
+      <div>
+        <p>Étudiant motivé en BTS SIO SISR, j’apprends à administrer des réseaux, gérer des systèmes Windows, et sécuriser les infrastructures de base.</p>
+        <p>Ce portfolio présente mes projets scolaires et professionnels dans un contexte concret.</p>
       </div>
       <div class="education">
         <h3>Formation</h3>
         <div class="education-item">
           <h4>BTS SIO - Spécialité SISR</h4>
-          <p>Lycée | 2023 - 2025</p>
+          <p>Lycée Professionnel | 2023 - 2025</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="skills" class="skills">
+  <section id="skills" class="skills fade-in-up">
     <h2>Compétences</h2>
-    <p class="text-center">Voici les principales compétences acquises durant ma formation en BTS SIO SISR. Je continue de progresser sur ces domaines par des projets concrets et des exercices pratiques.</p>
-    <!-- Reste inchangé -->
-  </section>
-
-  <section id="projects" class="projects">
-    <h2>Projets Techniques</h2>
-    <div class="projects-grid">
-      <!-- Projets existants + ajout d’un projet supplémentaire -->
+    <div class="skills-grid">
+      <a href="reseaux.html" class="skill-card">
+        <h3>🖧 Réseaux & Systèmes</h3>
+        <p>VLANs, Active Directory, DNS/DHCP, Windows Server, Virtualisation.</p>
+        <div class="cta-button small">Voir plus</div>
+      </a>
+      <a href="securite.html" class="skill-card">
+        <h3>🔒 Sécurité Informatique</h3>
+        <p>pfSense, GPO, Wireshark, gestion des droits NTFS, sensibilisation cybersécurité.</p>
+        <div class="cta-button small">Voir plus</div>
+      </a>
+      <a href="devops.html" class="skill-card">
+        <h3>⚙️ Scripts & Automatisation</h3>
+        <p>PowerShell, planificateur de tâches Windows, versionning GitHub.</p>
+        <div class="cta-button small">Voir plus</div>
+      </a>
+      <a href="Sauvegardes & Restaurations.html" class="skill-card">
+        <h3>💾 Sauvegardes & Restaurations</h3>
+        <p>Points de restauration, sauvegarde sur clé USB ou disque externe, outils Windows Backup.</p>
+        <div class="cta-button small">Voir plus</div>
+      </a>
+      <a href="Maintenance de base.html" class="skill-card">
+        <h3>🧰 Maintenance de base</h3>
+        <p>Nettoyage disque, gestionnaire de tâches, suppression de logiciels inutiles, antivirus de base.</p>
+        <div class="cta-button small">Voir plus</div>
+      </a>
+      <a href="Installation périphériques.html" class="skill-card">
+        <h3>🖨️ Installation de périphériques</h3>
+        <p>Connexion imprimantes locales/réseau, installation pilotes, numérisation, gestion d'erreurs.</p>
+        <div class="cta-button small">Voir plus</div>
+      </a>
     </div>
   </section>
 
-  <section id="experiences" class="about">
+  <section id="projects" class="projects fade-in-up">
+    <h2>Projets Techniques</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Simulation Réseau GSB</h3>
+        <p>Configuration de VLANs, DHCP et Active Directory dans un environnement simulé pour une PME.</p>
+        <div class="project-tags">
+          <span>Packet Tracer</span><span>Windows Server</span><span>AD</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Filtrage avec pfSense</h3>
+        <p>Mise en place de règles de sécurité et filtrage NAT via pfSense dans une VM dédiée.</p>
+        <div class="project-tags">
+          <span>pfSense</span><span>Firewall</span><span>LAN/WAN</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiences" class="about fade-in-up">
     <h2>Expériences Professionnelles</h2>
     <div class="text-center">
       <h3>SAV Solutions - Le Pontet (Stage)</h3>
-      <p>
-        Durant mon stage, j’ai pris part à plusieurs missions essentielles : installation et configuration de postes informatiques, support utilisateur de niveau 1, gestion d'incidents simples. J’ai également assisté à quelques opérations de maintenance réseau sur une petite infrastructure locale. J’ai pu gérer de manière autonome l'installation d’un poste complet dans un bureau distant.
-      </p>
+      <p>Installation de postes, support utilisateur, configuration d’imprimantes réseau et maintenance de base d’un parc informatique.</p>
     </div>
   </section>
 
-  <section id="objectif" class="about">
+  <section id="objectif" class="about fade-in-up">
     <h2>Objectif Professionnel</h2>
     <div class="text-center">
-      <p>
-        Je souhaite poursuivre en licence professionnelle en alternance, spécialisée en réseaux et cybersécurité. Mon ambition est d'acquérir des compétences plus avancées dans l’administration système, le déploiement sécurisé des infrastructures, et l’automatisation des tâches IT.
-        Ce qui me motive le plus, c’est de comprendre comment sécuriser une infrastructure tout en la rendant efficace et évolutive. Mon objectif final est d'intégrer un poste de technicien ou d'administrateur réseau/système dans une structure technique dynamique.
-      </p>
+      <p>Mon objectif est d'intégrer une licence professionnelle en alternance spécialisée en réseaux et cybersécurité. À terme, je vise un poste de technicien ou d'administrateur système/réseau.</p>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <!-- Formulaire de contact inchangé -->
+  <section id="contact" class="contact fade-in-up">
+    <h2>Contact</h2>
+    <div class="contact-intro">
+      <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem; color: #4b5563;">
+        Vous souhaitez en savoir plus, me proposer un stage ou une alternance ? Contactez-moi ci-dessous !
+      </p>
+    </div>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="submit-button">Envoyer</button>
+    </form>
+  </section>
+
+  <section id="documents" class="documents fade-in-up">
+    <h2>📎 Documents Téléchargeables</h2>
+    <div class="documents-list">
+      <div class="document-item">
+        <i class="fas fa-file-pdf"></i>
+        <a href="documents/annexe_tableau_synthese.pdf" target="_blank">Annexe - Tableau de Synthèse</a>
+      </div>
+      <div class="document-item">
+        <i class="fas fa-file-pdf"></i>
+        <a href="documents/attestation_stage.pdf" target="_blank">Attestation de Stage</a>
+      </div>
+      <div class="document-item">
+        <i class="fas fa-file-pdf"></i>
+        <a href="documents/cv_ouassim_sidi_ikhlef.pdf" target="_blank">CV - Ouassim Sidi Ikhlef</a>
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -163,14 +174,6 @@
       <p>&copy; 2024 Ouassim Sidi Ikhlef - Tous droits réservés.</p>
     </div>
   </footer>
-
-  <!-- Script pour particles.js -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script>
-    particlesJS.load('particles-js', 'particles.json', function() {
-      console.log('particles.js loaded - callback');
-    });
-  </script>
-  <script src="script.js"></script>
 </body>
 </html>
+
