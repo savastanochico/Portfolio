@@ -4,25 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Réseaux & Systèmes - Ouassim SI</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafb;
+    }
+    .competence-detail {
+      max-width: 900px;
+      margin: 100px auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    }
+    .competence-detail h2 {
+      font-size: 1.8rem;
+      color: #2563eb;
+      margin-bottom: 1.2rem;
+      text-align: center;
+    }
+    .competence-detail ul {
+      list-style-type: disc;
+      padding-left: 2rem;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #374151;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #2563eb;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #1e40af;
+    }
+  </style>
 </head>
 <body>
   <div id="particles-js"></div>
 
-  <section class="competence-detail">
-    <h2>🖧 Réseaux & Systèmes</h2>
-    <ul>
-      <li>Création d’une topologie réseau simulée sous Cisco Packet Tracer incluant VLANs, routage statique, et serveur DHCP, adaptée à une structure d’entreprise multi-services.</li>
-      <li>Installation d’un domaine Active Directory sous Windows Server avec ajout de clients, gestion des utilisateurs et mise en place des droits réseau.</li>
-      <li>Déploiement des services DNS et DHCP, configuration des zones directes et réservations IP.</li>
-      <li>Virtualisation d’environnements complets avec Hyper-V et VMware Workstation pour tester des infrastructures client-serveur en autonomie.</li>
-      <li>Sensibilisation à la sécurisation réseau de base : segmentation, gestion des accès utilisateurs, et principe de moindre privilège.</li>
-    </ul>
-    <a href="https://portfolio-ouassim.cloud/#skills" class="cta-button">← Retour aux compétences</a>
-  </section>
+  <main>
+    <section class="competence-detail">
+      <h2>🖧 Réseaux & Systèmes</h2>
+      <ul>
+        <li>Création d’une topologie réseau simulée sous Cisco Packet Tracer incluant VLANs, routage statique, et serveur DHCP, adaptée à une structure d’entreprise multi-services.</li>
+        <li>Installation d’un domaine Active Directory sous Windows Server avec ajout de clients, gestion des utilisateurs et mise en place des droits réseau.</li>
+        <li>Déploiement des services DNS et DHCP, configuration des zones directes et réservations IP.</li>
+        <li>Virtualisation d’environnements complets avec Hyper-V et VMware Workstation pour tester des infrastructures client-serveur en autonomie.</li>
+        <li>Sensibilisation à la sécurisation réseau de base : segmentation, gestion des accès utilisateurs, et principe de moindre privilège.</li>
+      </ul>
+      <a href="index.html#skills" class="cta-button">← Retour aux compétences</a>
+    </section>
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
