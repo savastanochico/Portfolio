@@ -21,6 +21,41 @@
       color: #2563eb;
       margin-bottom: 1rem;
     }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown > a {
+      font-weight: 600;
+      color: #2563eb;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      border: 1px solid #e5e7eb;
+      padding: 0.5rem 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      border-radius: 0.5rem;
+      z-index: 999;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu li {
+      list-style: none;
+      margin: 0.5rem 0;
+    }
+    .dropdown-menu a {
+      color: #1f2937;
+      text-decoration: none;
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+    .dropdown-menu a:hover {
+      color: #2563eb;
+    }
   </style>
 </head>
 <body>
@@ -33,6 +68,14 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
+        <li class="dropdown">
+          <a href="#">📁 Documents</a>
+          <ul class="dropdown-menu">
+            <li><a href="documents/cv_ouassim_sidi_ikhlef.pdf" download target="_blank">📄 CV</a></li>
+            <li><a href="documents/annexe_tableau_synthese.pdf" download target="_blank">📊 Annexe - Synthèse</a></li>
+            <li><a href="documents/attestation_stage.pdf" download target="_blank">📜 Attestation de stage</a></li>
+          </ul>
+        </li>
         <li><a href="#home">Accueil</a></li>
         <li><a href="#about">Profil</a></li>
         <li><a href="#skills">Compétences</a></li>
@@ -44,25 +87,15 @@
     </div>
   </nav>
 
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Ouassim Sidi Ikhlef</h1>
-      <h2>Passionné par les systèmes réseaux & la cybersécurité</h2>
-      <p>Étudiant en 2ème année de BTS SIO - Spécialité SISR</p>
-      <a href="mailto:Ouassimsidi023@gmail.com" class="cta-button">Me Contacter</a>
-    </div>
-  </section>
-
   <section id="about" class="about">
     <h2>Profil</h2>
     <div class="about-content">
       <div class="about-text">
         <p>
-          Actuellement en 2ème année de BTS Services Informatiques aux Organisations (option SISR), je me forme à la gestion d'infrastructures réseaux, à l'administration système et aux fondamentaux de la cybersécurité. 
-          Je suis motivé, curieux, et cherche constamment à progresser par la pratique et les projets concrets.
+          Actuellement en 2ème année de BTS Services Informatiques aux Organisations (option SISR), je me forme à la gestion d'infrastructures réseaux, à l'administration système et aux fondamentaux de la cybersécurité. Je suis motivé, curieux, rigoureux et j'apprécie particulièrement le travail en équipe ainsi que les environnements techniques dynamiques.
         </p>
         <p>
-          Ce portfolio présente mes compétences, mes réalisations en cours de formation et mes expériences acquises en stage.
+          Ce portfolio présente mes compétences, mes réalisations en cours de formation et mes expériences acquises en stage. J'aime apprendre par la pratique et résoudre des problèmes concrets.
         </p>
       </div>
       <div class="education">
@@ -77,6 +110,7 @@
 
   <section id="skills" class="skills">
     <h2>Compétences</h2>
+    <p class="text-center">Voici les principales compétences acquises durant ma formation en BTS SIO SISR. Je continue de progresser sur ces domaines par des projets concrets et des exercices pratiques.</p>
     <div class="skills-grid">
       <a href="reseaux.html" class="skill-card">
         <h3>🖧 Réseaux & Systèmes</h3>
@@ -95,17 +129,17 @@
       </a>
       <a href="Sauvegardes & Restaurations.html" class="skill-card">
         <h3>💾 Sauvegardes & Restaurations</h3>
-        <p>Utilisation d'outils Windows pour créer un point de restauration, sauvegarde de documents sur clé USB ou disque externe.</p>
+        <p>Création de points de restauration, sauvegarde de données sur périphériques externes.</p>
         <div class="cta-button small">Voir plus</div>
       </a>
       <a href="Maintenance de base.html" class="skill-card">
         <h3>🧰 Maintenance de base</h3>
-        <p>Nettoyage de disque, désinstallation de logiciels inutiles, gestion des processus avec le Gestionnaire de tâches.</p>
+        <p>Nettoyage système, désinstallation de logiciels, gestion des processus.</p>
         <div class="cta-button small">Voir plus</div>
       </a>
       <a href="Installation périphériques.html" class="skill-card">
         <h3>🖨️ Installation périphériques</h3>
-        <p>Installation et configuration d'imprimantes locales ou en réseau, ajout de pilotes, gestion des paramètres d’impression.</p>
+        <p>Installation et configuration d’imprimantes, scanners, périphériques réseau.</p>
         <div class="cta-button small">Voir plus</div>
       </a>
     </div>
@@ -128,6 +162,13 @@
           <span>pfSense</span><span>Firewall</span><span>LAN/WAN</span>
         </div>
       </div>
+      <div class="project-card">
+        <h3>Script de Sauvegarde</h3>
+        <p>Script PowerShell pour sauvegarde automatique de dossiers utilisateurs vers un disque externe.</p>
+        <div class="project-tags">
+          <span>PowerShell</span><span>Automatisation</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -137,7 +178,7 @@
       <h3>SAV Solutions - Le Pontet (Stage)</h3>
       <p>
         Durant mon stage, j’ai pris part à plusieurs missions essentielles : installation et configuration de postes informatiques, support utilisateur de niveau 1, gestion d'incidents simples.
-        J’ai également assisté à quelques opérations de maintenance réseau sur une petite infrastructure locale.
+        J’ai également assisté à quelques opérations de maintenance réseau sur une petite infrastructure locale. J’ai pu gérer de manière autonome l'installation d’un poste complet dans un bureau distant.
       </p>
     </div>
   </section>
@@ -147,46 +188,8 @@
     <div class="text-center">
       <p>
         Je souhaite poursuivre en licence professionnelle en alternance, spécialisée en réseaux et cybersécurité. Mon ambition est d'acquérir des compétences plus avancées dans l’administration système, le déploiement sécurisé des infrastructures, et l’automatisation des tâches IT.
+        Ce qui me motive le plus, c’est de comprendre comment sécuriser une infrastructure tout en la rendant efficace et évolutive.
         Mon objectif final est d'intégrer un poste de technicien ou d'administrateur réseau/système dans une structure technique dynamique.
       </p>
     </div>
   </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <div class="contact-intro">
-      <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem; color: #4b5563;">
-        Vous souhaitez en savoir plus, me proposer un stage ou une alternance ? N'hésitez pas à me contacter via ce formulaire ou directement par mail !
-      </p>
-    </div>
-    <form class="contact-form">
-      <div class="form-group">
-        <label for="name">Nom</label>
-        <input type="text" id="name" name="name" required />
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-      <button type="submit" class="submit-button">Envoyer</button>
-    </form>
-  </section>
-
-  <footer>
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="mailto:Ouassimsidi023@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/ouassim-sidi-ikhlef" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <p>&copy; 2024 Ouassim Sidi Ikhlef - Tous droits réservés.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
