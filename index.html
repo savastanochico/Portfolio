@@ -4,10 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ouassim Sidi Ikhlef - Portfolio BTS SIO SISR</title>
-  <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="/script.js" defer></script>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    .text-center {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .text-center p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #4b5563;
+    }
+    .text-center h3 {
+      color: #2563eb;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
   <div id="particles-js"></div>
@@ -15,6 +29,9 @@
   <nav class="navbar">
     <div class="nav-content">
       <div class="logo">Ouassim SI</div>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
       <ul class="nav-links">
         <li><a href="#home">Accueil</a></li>
         <li><a href="#about">Profil</a></li>
@@ -27,64 +44,86 @@
     </div>
   </nav>
 
-  <section id="home" class="hero fade-in-up">
-    <h1>Ouassim Sidi Ikhlef</h1>
-    <h2>Passionné par les systèmes réseaux & la cybersécurité</h2>
-    <p>Étudiant en 2ème année de BTS SIO - Spécialité SISR</p>
-    <a href="mailto:Ouassimsidi023@gmail.com" class="cta-button">Me Contacter</a>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Ouassim Sidi Ikhlef</h1>
+      <h2>Passionné par les systèmes réseaux & la cybersécurité</h2>
+      <p>Étudiant en 2ème année de BTS SIO - Spécialité SISR</p>
+      <a href="mailto:Ouassimsidi023@gmail.com" class="cta-button">Me Contacter</a>
+    </div>
   </section>
 
-  <section id="about" class="about fade-in-up">
+  <section id="about" class="about">
     <h2>Profil</h2>
     <div class="about-content">
-      <div>
-        <p>Actuellement en 2ème année de BTS Services Informatiques aux Organisations (option SISR), je me forme à l'administration système, à la gestion de réseaux et aux fondamentaux de la cybersécurité.</p>
-        <p>Ce portfolio réunit mes compétences, mes projets et mes expériences professionnelles acquises en formation et en stage.</p>
+      <div class="about-text">
+        <p>
+          Actuellement en 2ème année de BTS Services Informatiques aux Organisations (option SISR), je me forme à la gestion d'infrastructures réseaux, à l'administration système et aux fondamentaux de la cybersécurité. 
+          Je suis motivé, curieux, et cherche constamment à progresser par la pratique et les projets concrets.
+        </p>
+        <p>
+          Ce portfolio présente mes compétences, mes réalisations en cours de formation et mes expériences acquises en stage.
+        </p>
       </div>
       <div class="education">
         <h3>Formation</h3>
         <div class="education-item">
           <h4>BTS SIO - Spécialité SISR</h4>
-          <p>Lycée Professionnel | 2023 - 2025</p>
+          <p>Lycée | 2023 - 2025</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="skills" class="skills fade-in-up">
+  <section id="skills" class="skills">
     <h2>Compétences</h2>
     <div class="skills-grid">
       <a href="reseaux.html" class="skill-card">
         <h3>🖧 Réseaux & Systèmes</h3>
-        <p>Adressage IP, Active Directory, services réseau (DNS, DHCP), VLAN, Virtualisation.</p>
+        <p>Configuration VLANs, routage, Active Directory, services réseaux (DNS, DHCP), virtualisation.</p>
         <div class="cta-button small">Voir plus</div>
       </a>
       <a href="securite.html" class="skill-card">
         <h3>🔒 Sécurité Informatique</h3>
-        <p>pfSense, GPO, Wireshark, gestion des droits NTFS, sensibilisation cybersécurité.</p>
+        <p>GPO, pfSense, Wireshark, principes ISO 27001, gestion des droits utilisateurs.</p>
         <div class="cta-button small">Voir plus</div>
       </a>
       <a href="devops.html" class="skill-card">
-        <h3>⚙️ Scripts & Automatisation</h3>
-        <p>PowerShell, planificateur de tâches Windows, versionning GitHub.</p>
+        <h3>⚙️ DevOps & Scripts</h3>
+        <p>PowerShell, GitHub, automatisation de tâches Windows.</p>
+        <div class="cta-button small">Voir plus</div>
+      </a>
+      <a href="Sauvegardes & Restaurations.html" class="skill-card">
+        <h3>💾 Sauvegardes & Restaurations</h3>
+        <p>Utilisation d'outils Windows pour créer un point de restauration, sauvegarde de documents sur clé USB ou disque externe.</p>
+        <div class="cta-button small">Voir plus</div>
+      </a>
+      <a href="Maintenance de base.html" class="skill-card">
+        <h3>🧰 Maintenance de base</h3>
+        <p>Nettoyage de disque, désinstallation de logiciels inutiles, gestion des processus avec le Gestionnaire de tâches.</p>
+        <div class="cta-button small">Voir plus</div>
+      </a>
+      <a href="Installation périphériques.html" class="skill-card">
+        <h3>🖨️ Installation périphériques</h3>
+        <p>Installation et configuration d'imprimantes locales ou en réseau, ajout de pilotes, gestion des paramètres d’impression.</p>
         <div class="cta-button small">Voir plus</div>
       </a>
     </div>
   </section>
 
-  <section id="projects" class="projects fade-in-up">
+  <section id="projects" class="projects">
     <h2>Projets Techniques</h2>
     <div class="projects-grid">
       <div class="project-card">
         <h3>Infrastructure Réseau Local</h3>
-        <p>Simulation de réseau avec VLANs, Active Directory, DHCP et réservations IP.</p>
+        <p>Simulation réseau d'entreprise avec VLANs, DHCP, DNS, filtrage avec Packet Tracer.</p>
         <div class="project-tags">
-          <span>Cisco Packet Tracer</span><span>Windows Server</span><span>DHCP</span>
+          <span>Cisco Packet Tracer</span><span>Windows Server</span><span>GPO</span>
         </div>
       </div>
       <div class="project-card">
-        <h3>Sécurisation avec pfSense</h3>
-        <p>Création de règles de filtrage, blocage de ports, configuration NAT et DHCP.</p>
+        <h3>Sécurité avec pfSense</h3>
+        <p>Installation d'un firewall pfSense, configuration des règles de sécurité, NAT et filtrage réseau.</p>
         <div class="project-tags">
           <span>pfSense</span><span>Firewall</span><span>LAN/WAN</span>
         </div>
@@ -92,26 +131,32 @@
     </div>
   </section>
 
-  <section id="experiences" class="about fade-in-up">
+  <section id="experiences" class="about">
     <h2>Expériences Professionnelles</h2>
     <div class="text-center">
       <h3>SAV Solutions - Le Pontet (Stage)</h3>
-      <p>Participation à l'installation de postes, au support utilisateur, au paramétrage de matériel et au suivi de maintenance simple dans un environnement professionnel.</p>
+      <p>
+        Durant mon stage, j’ai pris part à plusieurs missions essentielles : installation et configuration de postes informatiques, support utilisateur de niveau 1, gestion d'incidents simples.
+        J’ai également assisté à quelques opérations de maintenance réseau sur une petite infrastructure locale.
+      </p>
     </div>
   </section>
 
-  <section id="objectif" class="about fade-in-up">
+  <section id="objectif" class="about">
     <h2>Objectif Professionnel</h2>
     <div class="text-center">
-      <p>Je souhaite continuer en licence professionnelle en alternance pour approfondir mes compétences en réseaux et cybersécurité, puis intégrer une entreprise en tant que technicien système et réseau.</p>
+      <p>
+        Je souhaite poursuivre en licence professionnelle en alternance, spécialisée en réseaux et cybersécurité. Mon ambition est d'acquérir des compétences plus avancées dans l’administration système, le déploiement sécurisé des infrastructures, et l’automatisation des tâches IT.
+        Mon objectif final est d'intégrer un poste de technicien ou d'administrateur réseau/système dans une structure technique dynamique.
+      </p>
     </div>
   </section>
 
-  <section id="contact" class="contact fade-in-up">
+  <section id="contact" class="contact">
     <h2>Contact</h2>
     <div class="contact-intro">
       <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem; color: #4b5563;">
-        Vous souhaitez en savoir plus ? Contactez-moi !
+        Vous souhaitez en savoir plus, me proposer un stage ou une alternance ? N'hésitez pas à me contacter via ce formulaire ou directement par mail !
       </p>
     </div>
     <form class="contact-form">
@@ -140,5 +185,8 @@
       <p>&copy; 2024 Ouassim Sidi Ikhlef - Tous droits réservés.</p>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
