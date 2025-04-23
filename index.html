@@ -8,6 +8,48 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="script.js" defer></script>
+  <style>
+.documents-box {
+  position: absolute;
+  top: 90px; /* sous la navbar */
+  right: 50px; /* léger décalage */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  max-width: 230px;
+  z-index: 1000;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.documents-box h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.documents-box a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1f2937;
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+  padding: 0.2rem 0;
+  transition: color 0.2s ease;
+}
+
+.documents-box a:hover {
+  color: #2563eb;
+}
+
+.documents-box i {
+  color: #dc2626;
+}
+
+  </style>
 </head>
 <body>
   <div id="particles-js"></div>
@@ -23,17 +65,25 @@
         <li><a href="#experiences">Expériences</a></li>
         <li><a href="#objectif">Objectif</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#documents">Documents</a></li>
       </ul>
     </div>
   </nav>
 
   <section id="home" class="hero fade-in-up">
+    <div class="documents-box">
+      <h3>📎 Documents</h3>
+      <a href="documents/annexe_tableau_synthese.pdf" target="_blank"><i class="fas fa-file-pdf"></i>Annexe - Synthèse</a>
+      <a href="documents/attestation_stage.pdf" target="_blank"><i class="fas fa-file-pdf"></i>Attestation de Stage</a>
+      <a href="documents/cv_ouassim_sidi_ikhlef.pdf" target="_blank"><i class="fas fa-file-pdf"></i>CV</a>
+    </div>
+  
+    <!-- Contenu centré verticalement -->
     <h1>Ouassim Sidi Ikhlef</h1>
-    <h2>Passionné par les systèmes réseaux & la cybersécurité</h2>
-    <p>Étudiant en 2ème année de BTS SIO - Spécialité SISR</p>
+    <h2 style="color: #2563eb;">Passionné par les systèmes réseaux & la cybersécurité</h2>
+    <p>Étudiant en 2ème année de BTS<br>SIO - Spécialité SISR</p>
     <a href="mailto:Ouassimsidi023@gmail.com" class="cta-button">Me Contacter</a>
   </section>
+  
 
   <section id="about" class="about fade-in-up">
     <h2>Profil</h2>
@@ -147,24 +197,6 @@
     </form>
   </section>
 
-  <section id="documents" class="documents fade-in-up">
-    <h2>📎 Documents Téléchargeables</h2>
-    <div class="documents-list">
-      <div class="document-item">
-        <i class="fas fa-file-pdf"></i>
-        <a href="documents/annexe_tableau_synthese.pdf" target="_blank">Annexe - Tableau de Synthèse</a>
-      </div>
-      <div class="document-item">
-        <i class="fas fa-file-pdf"></i>
-        <a href="documents/attestation_stage.pdf" target="_blank">Attestation de Stage</a>
-      </div>
-      <div class="document-item">
-        <i class="fas fa-file-pdf"></i>
-        <a href="documents/cv_ouassim_sidi_ikhlef.pdf" target="_blank">CV - Ouassim Sidi Ikhlef</a>
-      </div>
-    </div>
-  </section>
-
   <footer>
     <div class="footer-content">
       <div class="social-links">
@@ -176,4 +208,3 @@
   </footer>
 </body>
 </html>
-
