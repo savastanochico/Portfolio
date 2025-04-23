@@ -2,11 +2,105 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Réseaux & Systèmes - Ouassim SI</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f3f4f6, #e5e7eb);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      scroll-behavior: smooth;
+    }
+
+    .competence-detail {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #2563eb;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      color: #374151;
+    }
+
+    ul li {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #2563eb;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #1e40af;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 🌙 Dark Mode */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: linear-gradient(to right, #1f2937, #111827);
+        color: #e5e7eb;
+      }
+
+      .competence-detail {
+        background-color: #1f2937;
+        color: #e5e7eb;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      }
+
+      ul {
+        color: #d1d5db;
+      }
+
+      .cta-button {
+        background-color: #3b82f6;
+      }
+
+      .cta-button:hover {
+        background-color: #2563eb;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div id="particles-js"></div>
   <section class="competence-detail">
     <h2>🖧 Réseaux & Systèmes</h2>
     <ul>
@@ -16,8 +110,9 @@
       <li>Virtualisation d’environnements complets avec Hyper-V et VMware Workstation pour tester des infrastructures client-serveur en autonomie.</li>
       <li>Sensibilisation à la sécurisation réseau de base : segmentation, gestion des accès utilisateurs, et principe de moindre privilège.</li>
     </ul>
-    <a href="index.html#skills" class="cta-button">← Retour aux compétences</a>
+    <a href="index.html#skills" class="cta-button"><i class="fas fa-arrow-left"></i> Retour aux compétences</a>
   </section>
+
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="script.js"></script>
 </body>
