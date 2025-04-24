@@ -2,53 +2,134 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ouassim Sidi Ikhlef - Portfolio BTS SIO SISR</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="script.js" defer></script>
   <style>
-.documents-box {
-  position: absolute;
-  top: 90px; /* sous la navbar */
-  right: 50px; /* léger décalage */
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  padding: 1rem;
-  max-width: 230px;
-  z-index: 1000;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-}
+    /* Documents box */
+    .documents-box {
+      position: absolute;
+      top: 90px;
+      right: 50px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      padding: 1rem;
+      max-width: 230px;
+      z-index: 1000;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+    .documents-box h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #374151;
+    }
+    .documents-box a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #1f2937;
+      text-decoration: none;
+      margin-bottom: 0.4rem;
+      padding: 0.2rem 0;
+      transition: color 0.2s;
+    }
+    .documents-box a:hover {
+      color: #2563eb;
+    }
+    .documents-box i {
+      color: #dc2626;
+    }
 
-.documents-box h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #374151;
-}
+    /* Section Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .skill-card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+    .skill-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      color: #2563eb;
+    }
+    .skill-card p {
+      font-size: 0.95rem;
+      color: #374151;
+      line-height: 1.4;
+    }
+    .skill-card .cta-button.small {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+    }
 
-.documents-box a {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #1f2937;
-  text-decoration: none;
-  margin-bottom: 0.4rem;
-  padding: 0.2rem 0;
-  transition: color 0.2s ease;
-}
-
-.documents-box a:hover {
-  color: #2563eb;
-}
-
-.documents-box i {
-  color: #dc2626;
-}
-
+    /* Veille Technologique */
+    .veille-section {
+      background-color: #f9fafb;
+      padding: 4rem 2rem;
+      border-top: 4px solid #2563eb;
+    }
+    .veille-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #1f2937;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .veille-title::before {
+      content: '\1F9E0';
+      font-size: 2rem;
+    }
+    .veille-content {
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.8;
+      color: #374151;
+      font-size: 1.1rem;
+    }
+    .veille-content h3 {
+      font-size: 1.5rem;
+      color: #1f2937;
+      margin-top: 2rem;
+      padding-left: 0.75rem;
+      border-left: 4px solid #2563eb;
+    }
+    .veille-content h4 {
+      font-size: 1.25rem;
+      color: #2563eb;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .veille-point {
+      background-color: #ffffff;
+      padding: 1rem 1.25rem;
+      border-left: 4px solid #2563eb;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+    }
   </style>
 </head>
 <body>
@@ -70,52 +151,35 @@
     </div>
   </nav>
 
+  <!-- Section Accueil -->
   <section id="home" class="hero fade-in-up">
     <div class="documents-box">
       <h3>📎 Documents</h3>
       <a href="documents/annexe_tableau_synthese.pdf" target="_blank"><i class="fas fa-file-pdf"></i>Annexe - Synthèse</a>
-      <a href="documents/attestation_stage.pdf" target="_blank"><i class="fas fa-file-pdf"></i>Attestation de Stage</a>
       <a href="documents/cv_ouassim_sidi_ikhlef.pdf" target="_blank"><i class="fas fa-file-pdf"></i>CV</a>
     </div>
-  
-    <!-- Contenu centré verticalement -->
     <h1>Ouassim Sidi Ikhlef</h1>
     <h2 style="color: #2563eb;">Passionné par les systèmes réseaux & la cybersécurité</h2>
-    <p>Étudiant en 2ème année de BTS<br>SIO - Spécialité SISR</p>
+    <p>Étudiant en 2<sup>ème</sup> année de BTS SIO, spécialité SISR</p>
     <a href="mailto:Ouassimsidi023@gmail.com" class="cta-button">Me Contacter</a>
   </section>
-  
-<section id="about" class="about fade-in-up">
-  <h2>Profil</h2>
-  <div class="about-content">
-    <div>
-      <p>Étudiant en BTS SIO option SISR, je me spécialise dans l'administration des réseaux, la gestion des systèmes, la cybersécurité et le déploiement d'infrastructures IT.</p>
-      <p>Ce portfolio présente les projets réalisés en formation et en entreprise, illustrant mes compétences techniques en environnement professionnel.</p>
-    </div>
-    <div class="education">
-      <h3>Formation</h3>
-      
-      <div class="education-item">
-        <h4>BTS SIO - Option SISR</h4>
-        <p>Campus CCI Avignon | 2024 - 2025</p>
-        <p>Compétences : gestion de projets IT, sécurité des données, cybersécurité, déploiement d'infrastructures.</p>
-      </div>
 
-      <div class="education-item">
-        <h4>BTS SIO - Option SISR</h4>
-        <p>NEXTECH Avignon | 2023 - 2024</p>
-        <p>Solutions d’infrastructure, systèmes et réseaux.</p>
+  <!-- Section Profil -->
+  <section id="about" class="about fade-in-up">
+    <h2>Profil</h2>
+    <div class="about-content">
+      <div>
+        <p>Étudiant en BTS Services Informatiques aux Organisations, option SISR, je me spécialise dans l’administration des réseaux, la gestion des systèmes et la sécurisation des infrastructures IT.</p>
+        <p>Ce portfolio présente mes projets académiques et professionnels, illustrant mes compétences techniques et ma capacité d’adaptation.</p>
       </div>
-
-      <div class="education-item">
-        <h4>Bac Pro Systèmes Numériques - Option RISC</h4>
-        <p>Lycée Montesquieu Sorgues | 2020 - 2023</p>
-        <p>Réseaux informatiques et systèmes communicants.</p>
+      <div class="education">
+        <h3>Formation</h3>
+        <div class="education-item"><h4>Campus CCI Avignon | BTS SIO SISR</h4><p>2024 - 2025</p></div>
+        <div class="education-item"><h4>NEXTECH Avignon | BTS SIO SISR</h4><p>2023 - 2024</p></div>
+        <div class="education-item"><h4>Lycée Montesquieu, Sorgues | Bac Pro Systèmes Numériques RISC</h4><p>2020 - 2023</p></div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <section id="skills" class="skills fade-in-up">
     <h2>Compétences</h2>
@@ -152,123 +216,72 @@
       </a>
     </div>
   </section>
-
+  <!-- Section Projets -->
   <section id="projects" class="projects fade-in-up">
     <h2>Projets Techniques</h2>
     <div class="projects-grid">
-      <div class="project-card">
-        <h3>Simulation Réseau GSB</h3>
-        <p>Configuration de VLANs, DHCP et Active Directory dans un environnement simulé pour une PME.</p>
-        <div class="project-tags">
-          <span>Packet Tracer</span><span>Windows Server</span><span>AD</span>
-        </div>
-      </div>
-      <div class="project-card">
-        <h3>Filtrage avec pfSense</h3>
-        <p>Mise en place de règles de sécurité et filtrage NAT via pfSense dans une VM dédiée.</p>
-        <div class="project-tags">
-          <span>pfSense</span><span>Firewall</span><span>LAN/WAN</span>
-        </div>
-      </div>
+      <div class="project-card"><h3>Simulation Réseau GSB</h3><p>Configuration VLAN, DHCP et AD dans un réseau simulé pour PME.</p><div class="project-tags"><span>Packet Tracer</span><span>Windows Server</span><span>AD</span></div></div>
+      <div class="project-card"><h3>Filtrage pfSense</h3><p>Mise en place de règles NAT et filtrage avancé.</p><div class="project-tags"><span>pfSense</span><span>Firewall</span><span>LAN/WAN</span></div></div>
+      <div class="project-card"><h3>Support à distance</h3><p>Assistance via AnyDesk/TeamViewer, traitement des incidents et demandes utilisateurs.</p><div class="project-tags"><span>AnyDesk</span><span>TeamViewer</span></div></div>
+      <div class="project-card"><h3>Maintenance hardware</h3><p>Réparation PC, remplacement composants et nettoyage logiciels malveillants.</p><div class="project-tags"><span>Hardware</span><span>Malware Removal</span></div></div>
+      <div class="project-card"><h3>Réinstallation OS & Dual Boot</h3><p>Réinstallation complète de Windows et configuration dual boot Windows/Linux.</p><div class="project-tags"><span>Windows</span><span>Linux</span></div></div>
+      <div class="project-card"><h3>Planification interne</h3><p>Participation à la planification et coordination de projets techniques.</p><div class="project-tags"><span>Gestion de projet</span><span>Coordination</span></div></div>
     </div>
   </section>
 
-  <section id="experiences" class="about fade-in-up">
+  <!-- Section Expériences -->
+  <section id="experiences" class="experiences fade-in-up">
     <h2>Expériences Professionnelles</h2>
     <div class="text-center">
       <h3>SAV Solutions - Le Pontet (Stage)</h3>
-      <p>Installation de postes, support utilisateur, configuration d’imprimantes réseau et maintenance de base d’un parc informatique.</p>
+      <p>Installation postes, support utilisateur, configuration imprimantes réseau, maintenance parc.</p>
     </div>
   </section>
 
-  <section id="objectif" class="about fade-in-up">
+  <!-- Section Objectif -->
+  <section id="objectif" class="objectif fade-in-up">
     <h2>Objectif Professionnel</h2>
     <div class="text-center">
-      <p>Mon objectif est d'intégrer une licence professionnelle en alternance spécialisée en réseaux et cybersécurité. À terme, je vise un poste de technicien ou d'administrateur système/réseau.</p>
+      <p>Intégrer une licence pro réseaux & cybersécurité en alternance, pour devenir administrateur Systèmes et Réseaux.</p>
     </div>
   </section>
 
+  <!-- Section Contact -->
   <section id="contact" class="contact fade-in-up">
     <h2>Contact</h2>
     <div class="contact-intro">
-      <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem; color: #4b5563;">
-        Vous souhaitez en savoir plus, me proposer un stage ou une alternance ? Contactez-moi ci-dessous !
-      </p>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem; color: #4b5563;">Vous souhaitez en savoir plus ou proposer une collaboration ? Contactez-moi !</p>
     </div>
     <form class="contact-form">
-      <div class="form-group">
-        <label for="name">Nom</label>
-        <input type="text" id="name" name="name" required />
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
+      <div class="form-group"><label for="name">Nom</label><input type="text" id="name" name="name" required /></div>
+      <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required /></div>
+      <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
       <button type="submit" class="submit-button">Envoyer</button>
     </form>
   </section>
-  <section id="veille" class="about fade-in-up">
-  <h2>Veille Technologique</h2>
-  <div class="about-content">
-    <div>
-      <h3>Sujet : Les limites du Cloud Computing</h3>
 
-      <p>
-        Le cloud computing, ou informatique en nuage, permet d'accéder à distance à des ressources informatiques telles que des logiciels, des serveurs ou du stockage de données, via Internet. Cette technologie est aujourd’hui largement utilisée en entreprise pour sa flexibilité, son accessibilité et la réduction des coûts matériels.
-      </p>
-
-      <p>
-        Toutefois, malgré ses avantages, le cloud présente plusieurs limites importantes qu'il est essentiel de prendre en compte.
-      </p>
-
-      <h4>1. Dépendance à Internet</h4>
-      <p>
-        Le cloud repose entièrement sur une connexion réseau. Sans Internet, il devient impossible d'accéder aux services ou aux données. Une coupure de réseau peut donc paralyser une entreprise.
-      </p>
-
-      <h4>2. Moins de contrôle sur les données</h4>
-      <p>
-        Les données sont hébergées sur des serveurs externes, souvent situés hors d’Europe. Cela soulève des enjeux de confidentialité, de sécurité et de conformité au RGPD.
-      </p>
-
-      <h4>3. Sécurité et risques de fuites</h4>
-      <p>
-        Le cloud est exposé à des risques de piratage, d’erreurs de configuration ou de négligence. Même les plus grands fournisseurs ont déjà subi des incidents de sécurité.
-      </p>
-
-      <h4>4. Coûts mal anticipés</h4>
-      <p>
-        Le modèle de facturation à l’usage peut sembler économique, mais sans surveillance, les coûts peuvent rapidement augmenter, notamment en cas de surcharge ou d’utilisation imprévue.
-      </p>
-
-      <h4>5. Pannes possibles</h4>
-      <p>
-        Les services cloud peuvent subir des interruptions. Par exemple, l’incendie d’un data center d’OVH en 2021 a provoqué de nombreuses pertes de données pour des entreprises non préparées.
-      </p>
-
-      <h4>6. Impact environnemental</h4>
-      <p>
-        Les data centers consomment beaucoup d’énergie, ce qui a un impact écologique non négligeable. Le cloud contribue donc à l’empreinte carbone du numérique.
-      </p>
-
-      <h3>Des alternatives et des solutions</h3>
-
-      <p>
-        Il existe des solutions complémentaires comme l’hébergement local (on-premise), qui offre plus de contrôle, ou le cloud souverain, hébergé en France ou en Europe. Le edge computing permet un traitement des données localisé, et le green cloud favorise des pratiques plus respectueuses de l’environnement.
-      </p>
-
-      <p>
-        En résumé, le cloud computing reste un outil puissant, mais il doit être utilisé de manière maîtrisée et responsable. Une bonne stratégie passe par la compréhension de ses risques, l’adoption de bonnes pratiques et, parfois, la combinaison de plusieurs solutions.
-      </p>
+  <!-- Section Veille Technologique -->
+  <section id="veille" class="about fade-in-up veille-section">
+    <h2 class="veille-title">Veille Technologique</h2>
+    <div class="about-content">
+      <div class="veille-content">
+        <h3>Sujet : Les limites du Cloud Computing</h3>
+        <p>Le cloud computing, ou informatique en nuage, permet d’accéder à distance à des ressources informatiques (logiciels, serveurs, stockage) via Internet. Cette solution est prisée pour sa flexibilité, son évolutivité et la réduction des coûts initiaux.</p>
+        <p>Toutefois, derrière ces avantages, plusieurs contraintes majeures doivent être maîtrisées :</p>
+        <div class="veille-point"><h4>1. Dépendance à Internet</h4><p>Sans connexion fiable, l’accès aux services cloud est interrompu, avec un risque de paralysie opérationnelle.</p></div>
+        <div class="veille-point"><h4>2. Contrôle limité des données</h4><p>Hébergées hors site et parfois hors UE, les données échappent au contrôle direct, posant des enjeux de conformité et de confidentialité.</p></div>
+        <div class="veille-point"><h4>3. Sécurité et vulnérabilités</h4><p>Les erreurs de configuration et les cyberattaques exposent le cloud, même chez les grands fournisseurs.</p></div>
+        <div class="veille-point"><h4>4. Coûts imprévus</h4><p>Le modèle à la consommation peut générer des factures élevées sans surveillance continue.</p></div>
+        <div class="veille-point"><h4>5. Risques d’indisponibilité</h4><p>Pannes et incidents (incendie OVH 2021, défaillances d’AWS) peuvent gravement impacter l’activité.</p></div>
+        <div class="veille-point"><h4>6. Empreinte écologique</h4><p>Les data centers consomment énormément d’énergie, renforçant l’impact carbone du numérique.</p></div>
+        <h3 class="veille-solutions">Alternatives & solutions</h3>
+        <p>L’hébergement local (on-premise) garantit un contrôle total, le cloud souverain (ex : OVHcloud) respecte la législation européenne, l’edge computing traite les données en périphérie et le green cloud mise sur des énergies renouvelables pour réduire l’impact environnemental.</p>
+        <p>En résumé, le cloud computing reste un atout puissant, à condition d’en comprendre et d’en anticiper les limites pour une utilisation sécurisée et responsable.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <div class="social-links">
@@ -280,3 +293,4 @@
   </footer>
 </body>
 </html>
+
